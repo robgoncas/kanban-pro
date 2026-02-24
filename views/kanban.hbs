@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kanban PRO</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Kanban POC</h1>
+<div class="board">
+  <div class="column">
+    <h3>Backlog</h3>
+    {{#each tareas}}
+      {{#ifEquals estado "Backlog"}}
+        <div class="card {{prioridad}}">
+          <div class="card-header">
+            <span class="tag">{{TAG}}</span>
+            <span class="priority">{{prioridad}}</span>
+          </div>
+          <h4 class="card-title">{{titulo}}</h4>
+          <p class="card-desc">{{descripcion}}</p>
+          <div class="card-meta">
+            <span>Autor: {{autor}}</span>
+            <span>Responsable: {{responsable}}</span>
+          </div>
+          <div class="card-dates">
+            <span>Creación: {{fecha_creacion}}</span>
+            {{#if fecha_inicio}}<span>Inicio: {{fecha_inicio}}</span>{{/if}}
+            {{#if fecha_fin}}<span>Fin: {{fecha_fin}}</span>{{/if}}
+          </div>
+        </div>
+      {{/ifEquals}}
+    {{/each}}
+  </div>
+
+  <div class="column">
+    <h3>Doing</h3>
+    {{#each tareas}}
+      {{#ifEquals estado "Doing"}}
+        <div class="card {{prioridad}}">
+          <div class="card-header">
+            <span class="tag">{{TAG}}</span>
+            <span class="priority">{{prioridad}}</span>
+          </div>
+          <h4 class="card-title">{{titulo}}</h4>
+          <p class="card-desc">{{descripcion}}</p>
+          <div class="card-meta">
+            <span>Autor: {{autor}}</span>
+            <span>Responsable: {{responsable}}</span>
+          </div>
+          <div class="card-dates">
+            <span>Creación: {{fecha_creacion}}</span>
+            {{#if fecha_inicio}}<span>Inicio: {{fecha_inicio}}</span>{{/if}}
+            {{#if fecha_fin}}<span>Fin: {{fecha_fin}}</span>{{/if}}
+          </div>
+        </div>
+      {{/ifEquals}}
+    {{/each}}
+  </div>
+
+  <div class="column">
+    <h3>Done</h3>
+    {{#each tareas}}
+      {{#ifEquals estado "Done"}}
+        <div class="card {{prioridad}}">
+          <div class="card-header">
+            <span class="tag">{{TAG}}</span>
+            <span class="priority">{{prioridad}}</span>
+          </div>
+          <h4 class="card-title">{{titulo}}</h4>
+          <p class="card-desc">{{descripcion}}</p>
+          <div class="card-meta">
+            <span>Autor: {{autor}}</span>
+            <span>Responsable: {{responsable}}</span>
+          </div>
+          <div class="card-dates">
+            <span>Creación: {{fecha_creacion}}</span>
+            {{#if fecha_inicio}}<span>Inicio: {{fecha_inicio}}</span>{{/if}}
+            {{#if fecha_fin}}<span>Fin: {{fecha_fin}}</span>{{/if}}
+          </div>
+        </div>
+      {{/ifEquals}}
+    {{/each}}
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿[
+  {
+    "id": 1,
+    "titulo": "Arreglar login",
+    "descripcion": "Error 500 al autenticar",
+    "prioridad": "Bug",
+    "TAG": "HOTFIX",
+    "estado": "Backlog",
+    "fecha_creacion": "2026-02-20",
+    "fecha_inicio": null,
+    "fecha_fin": null,
+    "autor": "Carlos",
+    "responsable": "Ana"
+  },
+  {
+    "id": 2,
+    "titulo": "Crear dashboard",
+    "descripcion": "Vista principal",
+    "prioridad": "Feature",
+    "TAG": "FEATURE",
+    "estado": "Doing",
+    "fecha_creacion": "2026-02-18",
+    "fecha_inicio": "2026-02-19",
+    "fecha_fin": null,
+    "autor": "Pedro",
+    "responsable": "Luis"
+  },
+    {
+    "id": 3,
+    "titulo": "Crear reporte de ventas",
+    "descripcion": "Generar informe mensual",
+    "prioridad": "Improvement",
+    "TAG": "FEATURE",
+    "estado": "Done",
+    "fecha_creacion": "2026-02-18",
+    "fecha_inicio": "2026-02-19",
+    "fecha_fin": null,
+    "autor": "Pedro",
+    "responsable": "Luis"
+  }
+]
